@@ -1,4 +1,4 @@
-stage: qa
+stage: dev
 namespace: argocd
 
 applications:
