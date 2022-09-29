@@ -1,4 +1,4 @@
-#{{- $top := . -}}
+{{- $top := . -}}
 {{- range $application :=  .Values.applications -}}
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -27,4 +27,4 @@ spec:
     - allowEmpty=true
     - CreateNamespace=true
 {{ end }}
-##
+

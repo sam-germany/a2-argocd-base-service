@@ -1,23 +1,23 @@
 
-namespace: argocd
+#namespace: argocd
 
-applications:
-    - name: helm-b-app1
-      repoURL: https://github.com/sunnykeila/01-argocd-repo
-      targetRevision: master
-      sourcePath: helm-guestbook
+#applications:
+#    - name: helm-b-app1
+#      repoURL: https://github.com/sunnykeila/01-argocd-repo
+#      targetRevision: master
+#      sourcePath: helm-guestbook
 
-    - name: helm-b-app2
-      repoURL: https://github.com/sunnykeila/01-argocd-repo
-      targetRevision: master
-      sourcePath: helm-guestbook
+#    - name: helm-b-app2
+#      repoURL: https://github.com/sunnykeila/01-argocd-repo
+#      targetRevision: master
+#      sourcePath: helm-guestbook
 
-    - name: helm-b-app3
-      repoURL: https://github.com/sunnykeila/01-argocd-repo
-      targetRevision: master
-      sourcePath: helm-guestbook
+#    - name: helm-b-app3
+#      repoURL: https://github.com/sunnykeila/01-argocd-repo
+#      targetRevision: master
+#      sourcePath: helm-guestbook
 
-    - name: helm-b-app4
-      repoURL: https://github.com/sunnykeila/01-argocd-repo
-      targetRevision: master
-      sourcePath: helm-guestbook
+#    - name: helm-b-app4
+#      repoURL: https://github.com/sunnykeila/01-argocd-repo
+#      targetRevision: master
+#      sourcePath: helm-guestbook
