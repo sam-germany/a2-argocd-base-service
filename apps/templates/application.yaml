@@ -5,7 +5,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: '{{- $application.name }}'
-  namespace: '{{- $top.namespace }}'
+  namespace: '{{- $top.Values.namespace }}'
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
@@ -18,7 +18,7 @@ spec:
       parameters:
       version: v3
       valueFiles:
-        - values-dev.yaml
+        - values-{{ $top.Values.stage }}.yaml
     path: '{{- $application.sourcePath }}'
     repoURL: '{{- $application.repoURL }}'
     targetRevision: master
