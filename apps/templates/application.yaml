@@ -18,7 +18,7 @@ spec:
       parameters:
       version: v3
       valueFiles:
-        - apps/values-dev.yaml
+        - /apps/values-dev.yaml
     path: '{{- $application.sourcePath }}'
     repoURL: '{{- $application.repoURL }}'
     targetRevision: master
