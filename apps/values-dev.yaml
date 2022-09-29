@@ -3,21 +3,21 @@ namespace: argocd
 
 applications:
     - name: helm-app1
-      repoURL: https://github.com/sunnykeila/a3-argocd-base-service.git
+      repoURL: https://github.com/sunnykeila/a2-argocd-base-service.git
       targetRevision: master
       sourcePath: my-service-a-one
 
     - name: helm-app2
-      repoURL: https://github.com/sunnykeila/a3-argocd-base-service.git
+      repoURL: https://github.com/sunnykeila/a2-argocd-base-service.git
       targetRevision: master
       sourcePath: my-service-b-two
 
     - name: helm-app3
-      repoURL: https://github.com/sunnykeila/a3-argocd-base-service.git
+      repoURL: https://github.com/sunnykeila/a2-argocd-base-service.git
       targetRevision: master
       sourcePath: my-service-c-three
 
     - name: helm-app4
-      repoURL: https://github.com/sunnykeila/a3-argocd-base-service.git
+      repoURL: https://github.com/sunnykeila/a2-argocd-base-service.git
       targetRevision: master
       sourcePath: my-service-d-four

@@ -5,7 +5,7 @@ description: A Helm chart for Kubernetes
 dependencies:
   - name: helm-guestbook-without-values-file
     version: 0.1.0
-    repository: https://github.com/sunnykeila/01-argocd-repo
+    repository: https://github.com/sunnykeila/03-argocd-repo.git
 
 # A chart can be either an 'application' or a 'library' chart.
 #
