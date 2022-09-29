@@ -18,7 +18,7 @@ spec:
       parameters:
       version: v3
       valueFiles:
-      - /values-dev.yaml
+        - a3-argocd-base-service/values-dev.yaml
     path: '{{- $application.sourcePath }}'
     repoURL: '{{- $application.repoURL }}'
     targetRevision: master
