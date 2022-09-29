@@ -4,13 +4,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: '{{- $application.name }}'
-  namespace: '{{- $top.Values.namespace }}'
+  name: {{- $application.name }}
+  namespace: {{- $top.Values.namespace }}
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: '{{- $application.name }}'
+    namespace: {{- $application.name }}
     server: https://kubernetes.default.svc
   project: default
   source:
@@ -19,8 +19,8 @@ spec:
       version: v3
       valueFiles:
         - values-{{ $top.Values.stage }}.yaml
-    path: '{{- $application.sourcePath }}'
-    repoURL: '{{- $application.repoURL }}'
+    path: {{- $application.sourcePath }}
+    repoURL: {{- $application.repoURL }}
     targetRevision: master
   syncPolicy:
     syncOptions:
