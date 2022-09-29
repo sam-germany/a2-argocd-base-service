@@ -10,14 +10,14 @@ applications:
     - name: helm-app2
       repoURL: https://github.com/sunnykeila/01-argocd-repo
       targetRevision: master
-      sourcePath: helm-hooks
+      sourcePath: helm-guestbook
 
     - name: helm-app3
       repoURL: https://github.com/sunnykeila/01-argocd-repo
       targetRevision: master
-      sourcePath: kustomize-guestbook
+      sourcePath: helm-guestbook
 
     - name: helm-app4
       repoURL: https://github.com/sunnykeila/01-argocd-repo
       targetRevision: master
-      sourcePath: sync-waves
+      sourcePath: helm-guestbook
