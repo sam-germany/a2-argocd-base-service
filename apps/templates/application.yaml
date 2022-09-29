@@ -1,0 +1,30 @@
+#{{- $top := . -}}
+{{- range $application :=  .Values.applications -}}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: '{{- $application.name }}'
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: '{{- $application.name }}'
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    helm:
+      parameters:
+      version: v3
+      valueFiles:
+      - values-dev.yaml
+    path: '{{- $application.sourcePath }}'
+    repoURL: '{{- $application.repoURL }}'
+    targetRevision: master
+  syncPolicy:
+    syncOptions:
+    - allowEmpty=true
+    - CreateNamespace=true
+{{ end }}
+##
