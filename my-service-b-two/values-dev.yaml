@@ -8,6 +8,7 @@ image:
   repository: gcr.io/heptio-images/ks-guestbook-demo
   tag: 0.1
   pullPolicy: IfNotPresent
+  stage: dev-22
 
 service:
   type: ClusterIP
